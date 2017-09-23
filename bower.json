@@ -1,0 +1,15 @@
+{
+  "name": "testProject__1",
+  "homepage": "https://github.com/tujh123/testProject__1",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "third",
+    "test",
+    "tests"
+  ]
+}
