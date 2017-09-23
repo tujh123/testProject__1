@@ -1,18 +1,150 @@
 @black: #000;
+@white: #fff;
 @grey: #3a3a43;
 @dark-gray: #424242;
 @dateBlock: #ff5f47;
 @btn_green-phone: #62c741;
 @sidebar_light-grey: #ebebed;
+@sidebar_textNormal: #000000;
+@sidebar_textLight: #666670;
 @text_light-turquoise: #c4dcd5;
 @text_light-blue: #0072be;
 @text_mainMenu-SpecialOffer: #d05743;
 @text_mainMenu-NewBuildings: #f7c515;
 @content_textNormal: #424242;
 @content_textLight: #757575;
-@sidebar_textNormal: #000000;
-@sidebar_textLight: #666670;
+@startCap_normalBtn: #a8adbd;
+@startCap_pressedBtn: #fff;
 
 body {
   background-color: #fff;
+}
+
+.startCap {
+  background-color: @black;
+  height: 28px;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+
+  }
+  a:hover {
+    text-decoration: none;
+    color: @startCap_pressedBtn;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+    color: @white;
+  }
+
+  a:focus {
+    text-decoration: none;
+    color: @white;
+  }
+
+  &_normalBtn {
+    color: @startCap_normalBtn;
+  }
+  &_pressedBtn {
+    color: @startCap_pressedBtn;
+
+  }
+}
+
+.startCap {
+  background-color: @black;
+  height: 28px;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+
+  }
+  a:hover {
+    text-decoration: none;
+    color: @startCap_pressedBtn;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+    color: @white;
+  }
+
+  a:focus {
+    text-decoration: none;
+    color: @white;
+  }
+
+  &_menu {
+    text-decoration: none;
+    color: @startCap_normalBtn;
+    &-normalBtn {
+      color: @startCap_normalBtn;
+      padding-left: 16px;
+    }
+  }
+
+  &_menu-pressedBtn {
+    text-decoration: none;
+    color: @startCap_pressedBtn;
+    &-pressedBtn {
+      color: @startCap_normalBtn;
+      padding-left: 16px;
+    }
+  }
+}
+
+.imgExplanation {
+  display: block;
+  width: 10px;
+  height: 18px;
+
+  background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -50px 4px;
+}
+
+.imgExplanation:hover {
+  background-position: -65px 4px;
+}
+
+.imgExplanation:focus {
+  background-position: -65px 4px;
+}
+
+
+.signUp {
+  display: block;
+  width: 10px;
+  height: 18px;
+
+  background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -65px;
+}
+
+.signUp:hover {
+  background-position: -18px -65px;
+}
+
+.signUp:focus {
+  background-position: -18px -65px;
+}
+
+.comeIn {
+  margin-left: -20px;
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -48px;
+}
+
+.comeIn:hover {
+  background-position: -18px -48px;
+}
+
+.comeIn:focus {
+  background-position: -18px -48px;
 }
