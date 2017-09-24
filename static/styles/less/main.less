@@ -3,7 +3,7 @@
 @grey: #3a3a43;
 @dark-gray: #424242;
 @dateBlock: #ff5f47;
-@btn_green-phone: #62c741;
+@btn_green-phone: #30c70b;
 @sidebar_light-grey: #ebebed;
 @sidebar_textNormal: #000000;
 @sidebar_textLight: #666670;
@@ -16,6 +16,15 @@
 @startCap_normalBtn: #a8adbd;
 @startCap_pressedBtn: #fff;
 @textVTB: #2e353a;
+@blockTimer_first-background: #424242;
+@blockTimer_first-timer: #ffcc02;
+@contentBorder: cccccc;
+
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 
 body {
   background-color: #fff;
@@ -313,6 +322,9 @@ header {
 }
 
 .content_container {
+
+  padding-bottom: 5px;
+  display: inline-table;
   border: 1px solid gray;
   height: 400px;
 }
@@ -326,22 +338,92 @@ header {
 .textVTB {
   margin: 20px 15px;
   color: @textVTB;
-  font-size: 28px;
+  font-size: 31px;
+
 }
 
 .dateBlock {
 
-  font-size: 14px;
   color: @white;
   display: inline-block;
   background-color: @dateBlock;
   border-radius: 5px 5px 5px 5px;
 
   &_description {
+    font-size: 15px;
     margin: 8px 8px;
   }
 }
 
 .textIndentation {
   margin: 15px 30px;
+}
+
+#fist_timer {
+  color: @blockTimer_first-timer;
+  text-align: center;
+  font-size: 25px;
+}
+
+.timerBlock_first {
+  width: 100%;
+  margin: -15px 0;
+  display: inline-block;
+  background-color: @blockTimer_first-background;
+  border-radius: 5px 5px 5px 5px;
+
+  &-timer {
+    margin: 10px 10px;
+  }
+}
+
+.descriptionFirstTimer {
+  margin: 20px 0;
+  color: @content_textNormal;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contentContainer_newBuildings {
+
+}
+
+.content_000001 {
+
+}
+
+.content_000001-1 {
+  color: @content_textNormal;
+  margin: 15px -15px;
+  font-size: 20.5px;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn_call {
+  background-color: @btn_green-phone;
+  color: @white;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  width: 200px;
+  height: 50px;
+}
+
+hr {
+    border: none;
+    color: gray;
+    background-color: gray;
+    height: 2px;
+   }
+
+.moreStocks {
+
 }
