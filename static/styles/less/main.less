@@ -28,7 +28,6 @@ html {
 
 body {
   background-color: #fff;
-  height: 20000px;
 }
 
 .startCap {
@@ -343,15 +342,18 @@ header {
 }
 
 .dateBlock {
-
   color: @white;
   display: inline-block;
   background-color: @dateBlock;
   border-radius: 5px 5px 5px 5px;
 
   &_description {
-    font-size: 15px;
+    font-size: 14px;
     margin: 8px 8px;
+    width: 103px;
+    height: 12px;
+    text-align: justify;
+    line-height: 13px;
   }
 }
 
@@ -359,10 +361,89 @@ header {
   margin: 15px 30px;
 }
 
+.dateBlock2 {
+  float: right;
+  color: @white;
+  display: inline-block;
+  background-color: @dateBlock;
+  border-radius: 5px 5px 5px 5px;
+
+  &_description {
+    font-size: 14px;
+    margin: 8px 8px;
+    width: 103px;
+    height: 12px;
+    text-align: justify;
+    line-height: 13px;
+  }
+}
+
+.textIndentation2 {
+  float: right;
+  margin: 15px 30px;
+}
+
+.dateBlock3 {
+  float: right;
+  color: @white;
+  display: inline-block;
+  background-color: @dateBlock;
+  border-radius: 5px 5px 5px 5px;
+
+  &_description {
+    font-size: 14px;
+    margin: 8px 8px;
+    width: 103px;
+    height: 12px;
+    text-align: justify;
+    line-height: 13px;
+  }
+}
+
+.textIndentation3 {
+  float: left;
+  margin: 15px 15px;
+}
+
+.textUp_timer {
+  display: block;
+  margin-left: -50px;
+  margin-top: 100px;
+  font-size: 18px
+}
+
+.textRight_timer {
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 18px
+}
+
 #fist_timer {
   color: @blockTimer_first-timer;
   text-align: center;
   font-size: 25px;
+}
+
+#two_timer {
+  color: @white;
+  display: block;
+  text-align: center;
+  font-size: 26px;
+}
+
+#three_timer {
+  color: @white;
+  display: block;
+  text-align: center;
+  font-size: 26px;
+}
+
+#four_timer {
+  color: @white;
+  display: block;
+  text-align: center;
+  font-size: 26px;
 }
 
 .timerBlock_first {
@@ -375,6 +456,29 @@ header {
   &-timer {
     margin: 10px 10px;
   }
+}
+
+.timerBlock_two {
+  width: 100%;
+  margin: -15px 0;
+  display: inline-block;
+  background-color: @blockTimer_first-background;
+  border-radius: 5px 5px 5px 5px;
+
+  &-timer {
+    margin: 10px 10px;
+  }
+}
+
+.timerPosition_content_000002 {
+  position: absolute;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: -50px;
+}
+
+.top_padding {
+  padding-top: 25px;
 }
 
 .descriptionFirstTimer {
@@ -390,6 +494,274 @@ header {
 
 .content_000001 {
 
+}
+
+.content_000002 {
+
+}
+
+.content_containerImg-1 {
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/House-InInstallments.jpg");
+  background-repeat: no-repeat;
+}
+
+.content_containerImg-2 {
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/ApartmentOfTheDay.jpg");
+  background-repeat: no-repeat;
+}
+
+.content_containerImg-3 {
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/MinesProcent.jpg");
+  background-repeat: no-repeat;
+}
+
+.contentBlockOther {
+  border: 1px solid gray;
+
+
+  &_Img1 {
+    background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url(../../images/House_1.jpeg);
+    background-repeat: no-repeat;
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding1 {
+    display: inline-block; padding-top: 160px;
+  }
+}
+
+.contentBlockOther:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  transform: scale(1.02, 1.02);
+  border: 1px solid gray;
+
+
+  &_Img1 {
+     background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url(../../images/House_1.jpeg);
+    background-repeat: no-repeat;
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding1 {
+    display: inline-block; padding-top: 160px;
+  }
+}
+
+.contentBlockOther:after {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  opacity: 1;
+  border: 1px solid gray;
+
+
+  &_Img1 {
+    background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url(../../images/House_1.jpeg);
+    background-repeat: no-repeat;
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding1 {
+    display: inline-block; padding-top: 160px;
+  }
+}
+
+.contentBlockOther {
+  border: 1px solid gray;
+
+
+  &_Img2 {
+     background-size: 492px;
+    background-position: center;
+    width: 381px;
+    height: 252px;
+    background-image: url("../../images/moscow-863528_1280.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding2 {
+    display: inline-block; padding-top: 128px;
+  }
+}
+
+.contentBlockOther:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  transform: scale(1.02, 1.02);
+  border: 1px solid gray;
+
+
+  &_Img2 {
+       background-size: 492px;
+    background-position: center;
+    width: 381px;
+    height: 252px;
+    background-image: url("../../images/moscow-863528_1280.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding2 {
+    display: inline-block; padding-top: 128px;
+  }
+}
+
+.contentBlockOther:after {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  opacity: 1;
+  border: 1px solid gray;
+
+
+  &_Img2 {
+        background-size: 492px;
+    background-position: center;
+    width: 381px;
+    height: 252px;
+    background-image: url("../../images/moscow-863528_1280.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding2 {
+    display: inline-block; padding-top: 128px;
+  }
+}
+
+.contentBlockOther {
+  border: 1px solid gray;
+
+
+  &_Img3 {
+    background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url("../../images/House-InInstallments.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding3 {
+    display: inline-block; padding-top: 67px;
+  }
+}
+
+.contentBlockOther:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  transform: scale(1.02, 1.02);
+  border: 1px solid gray;
+
+
+  &_Img3 {
+    background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url("../../images/House-InInstallments.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding3 {
+    display: inline-block; padding-top: 67px;
+  }
+}
+
+.contentBlockOther:after {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.84);
+  opacity: 1;
+  border: 1px solid gray;
+
+
+  &_Img3 {
+    background-size: 402px;
+    background-position: center;
+    width: 380px;
+    height: 251px;
+    background-image: url("../../images/House-InInstallments.jpg");
+    background-repeat: no-repeat;
+
+    &-text {
+      font-size: 22px;
+      margin: 5px 15px;
+    }
+  }
+  &_padding3 {
+    display: inline-block; padding-top: 67px;
+  }
+}
+
+.content_containerImg-4 {
+  margin-left: -15px;
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/House_1.jpeg");
+  background-repeat: no-repeat;
+}
+
+.content_containerImg-5 {
+  margin-left: -15px;
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/MinesProcent.jpg");
+  background-repeat: no-repeat;
+}
+
+.content_containerImg-6 {
+  margin-left: -15px;
+  background-size: 560px;
+  background-position: center;
+  width: 425px;
+  height: 280px;
+  background-image: url("../../images/MinesProcent.jpg");
+  background-repeat: no-repeat;
 }
 
 .content_000001-1 {
@@ -418,12 +790,30 @@ header {
 }
 
 hr {
-    border: none;
-    color: gray;
-    background-color: gray;
-    height: 2px;
-   }
+  border: none;
+  color: gray;
+  background-color: gray;
+  height: 2px;
+}
 
 .moreStocks {
+  font-size: 22px;
+  margin: 15px 15px;
+}
 
+.otherShares {
+  font-size: 20px;
+
+}
+
+.content_000002-2 {
+  color: @content_textLight;
+  font-size: 18px;
+  margin: 10px 40px;
+}
+
+.contentText-bold {
+  color: @content_textNormal;
+  font-size: 20.5px;
+  font-weight: bold;
 }
