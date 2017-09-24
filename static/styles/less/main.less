@@ -15,9 +15,11 @@
 @content_textLight: #757575;
 @startCap_normalBtn: #a8adbd;
 @startCap_pressedBtn: #fff;
+@textVTB: #2e353a;
 
 body {
   background-color: #fff;
+  height: 20000px;
 }
 
 .startCap {
@@ -291,4 +293,55 @@ header {
 
 .sidebarImg_first {
   margin-top: 75px;
+}
+
+.page_container {
+  position: relative;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+#listNewBuildings {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.page_content {
+  padding-top: 120px;
+  position: relative;
+}
+
+.content_container {
+  border: 1px solid gray;
+  height: 400px;
+}
+
+.theDescriptionOf {
+  color: @text_light-blue;
+  display: inline-block;
+  margin: 15px 15px;
+}
+
+.textVTB {
+  margin: 20px 15px;
+  color: @textVTB;
+  font-size: 28px;
+}
+
+.dateBlock {
+
+  font-size: 14px;
+  color: @white;
+  display: inline-block;
+  background-color: @dateBlock;
+  border-radius: 5px 5px 5px 5px;
+
+  &_description {
+    margin: 8px 8px;
+  }
+}
+
+.textIndentation {
+  margin: 15px 30px;
 }
