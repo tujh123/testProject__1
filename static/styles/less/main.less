@@ -18,7 +18,6 @@
 
 body {
   background-color: #fff;
-  height: 20000px;
 }
 
 .startCap {
@@ -232,9 +231,7 @@ header {
   border-bottom: @text_mainMenu-hover 3px solid;
 }
 
-
 .specialOffer {
-
 
   color: @text_mainMenu-SpecialOffer;
 }
@@ -275,4 +272,23 @@ header {
   background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") 1px -112px;
 }
 
+.rightSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+  max-width: 400px;
+  margin-right: -15px;
+  background-color: @sidebar_light-grey;
+  height: 100%;
+  z-index: -1;
 
+}
+
+.rightSidebar > ul > li {
+  list-style-type: none;
+}
+
+.sidebarImg_first {
+  margin-top: 75px;
+}
