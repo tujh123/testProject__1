@@ -6,53 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Styles-->
-    <link rel="stylesheet" href="../styles/css/main.css">
+
     <link rel="stylesheet" href="../../third/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 
     <!--JS-->
-    <script type="text/javascript" src="../../third/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../third/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="../../third/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row  startCap">
-        <div class="col-lg-6 text-center">
-            <div class="col-lg-2 ">
-                <a href="#" class="startCap_pressedBtn">Москва и МО</a>
+    <header>
+        <div class="row  startCap">
+            <div class="col-lg-6 text-center">
+                <div class="col-lg-2 ">
+                    <a href="#" class="startCap_pressedBtn">Москва и МО</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="startCap_normalBtn">С.-Петербург и ЛО</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="startCap_normalBtn">Другие регионы</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="startCap_normalBtn">Зарубежная недвижимость</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="startCap_normalBtn">Поиск по карте</a>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <a href="#" class="startCap_normalBtn">С.-Петербург и ЛО</a>
-            </div>
-            <div class="col-lg-2">
-                <a href="#" class="startCap_normalBtn">Другие регионы</a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#" class="startCap_normalBtn">Зарубежная недвижимость</a>
-            </div>
-            <div class="col-lg-2">
-                <a href="#" class="startCap_normalBtn">Поиск по карте</a>
+            <div class="col-lg-5 col-lg-offset-1">
+                <div class="col-lg-3 col-lg-offset-4">
+                    <a href="#" class="startCap_menu-normalBtn imgExplanation">&nbsp;Разместить&nbsp;объясвление</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="startCap_menu-normalBtn signUp">&nbsp;Зарегистирироваться</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="startCap_menu-normalBtn comeIn">Войти</a>
+                </div>
             </div>
         </div>
+    </header>
 
-        <div class="col-lg-5 col-lg-offset-1">
-            <div class="col-lg-3 col-lg-offset-4">
-                <a href="#" class="startCap_menu-normalBtn imgExplanation">&nbsp;Разместить&nbsp;объясвление</a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#" class="startCap_menu-normalBtn signUp">&nbsp;Зарегистирироваться</a>
-            </div>
-            <div class="col-lg-2">
-                <a href="#" class="startCap_menu-normalBtn comeIn">Войти</a>
-            </div>
+    <nav id="top_nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header page-scroll col-lg-2 text-center" style="padding-left: 3%;">
+            <a class="page-scroll" href="#">
+                <img src="../images/GED-Logo.svg" class="logo-icon"/>
+            </a>
         </div>
-    </div>
+        <div class="collapse navbar-collapse col-lg-2" id="bs-example-navbar-collapse-1" style="padding-left: 3%;">
+            <ul class="nav navbar-nav navbar-right" style="font-size: 22px;">
+                <li>
+                    <a class="menuBtn underline" href="#">Продажа</a>
+                </li>
+                <li>
+                    <a class="menuBtn underline" href="#">Аренда</a>
+                </li>
+                <li>
+                    <a class="menuBtn underline-specialOffer specialOffer " href="#">
+                        <img class="imgSpecialOffer"/><span class="specialOffer-2">Спецпродложение</span></a>
+                </li>
+                <li class="active">
+                    <a class="menuBtn underline" href="#">Новостройки</a>
+                </li>
+                <li>
+                    <a class="menuBtn underline" href="#">Поселки</a>
+                </li>
+                <li>
+                    <a class="menuBtn underline" href="#">Риэлторы</a>
+                </li>
+                <li>
+                    <a class="menuBtn underline" href="#">Журнал</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
 </div>
+
+<script>
+    var h_hght = 24; // высота шапки
+    var h_mrg = 0;	  // отступ когда шапка уже не видна
+
+    $(function () {
+
+        var elem = $('#top_nav');
+        var top = $(this).scrollTop();
+
+        if (top > h_hght) {
+            elem.css('top', h_mrg);
+        }
+
+        $(window).scroll(function () {
+            top = $(this).scrollTop();
+
+            if (top + h_mrg < h_hght) {
+                elem.css('top', (h_hght - top));
+            } else {
+                elem.css('top', h_mrg);
+            }
+        });
+
+    });
+
+</script>
+
+<script>
+    $(".nav li").on("click", function () {
+        $(".nav li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+</script>
+
 </body>
 </html>
 

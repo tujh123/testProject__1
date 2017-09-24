@@ -10,7 +10,7 @@
 @text_light-turquoise: #c4dcd5;
 @text_light-blue: #0072be;
 @text_mainMenu-SpecialOffer: #d05743;
-@text_mainMenu-NewBuildings: #f7c515;
+@text_mainMenu-hover: #f7c515;
 @content_textNormal: #424242;
 @content_textLight: #757575;
 @startCap_normalBtn: #a8adbd;
@@ -18,6 +18,7 @@
 
 body {
   background-color: #fff;
+  height: 20000px;
 }
 
 .startCap {
@@ -116,12 +117,10 @@ body {
   background-position: -65px 4px;
 }
 
-
 .signUp {
   display: block;
   width: 10px;
   height: 18px;
-
   background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -65px;
 }
 
@@ -148,3 +147,132 @@ body {
 .comeIn:focus {
   background-position: -18px -48px;
 }
+
+.navbar-default {
+  background-color: #3a3a43;
+  border-color: #3a3a43;
+}
+
+/*шапка*/
+header {
+  height: 24px;
+}
+
+/*фиксированное плавающее меню*/
+#top_nav {
+  top: 24px; /*высота шапки в пикселях*/
+  position: fixed;
+  z-index: 1000;
+}
+
+.navIcon {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.logo-icon {
+  margin-top: 5px;
+  width: 280px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: @text_mainMenu-hover;
+  background-color: #3a3a43;
+  padding-bottom: 12px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: @white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: @text_mainMenu-hover;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: @text_mainMenu-hover;
+}
+
+.underline {
+
+}
+
+.underline:hover {
+  padding-bottom: 12px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.underline:active {
+  padding-bottom: 12px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.underline:focus {
+  padding-bottom: 12px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.underline-specialOffer {
+
+}
+
+.underline-specialOffer:hover {
+  padding-bottom: 9.5px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.underline-specialOffer:active {
+  padding-bottom: 9.5px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+.underline-specialOffer:focus {
+  padding-bottom: 9.5px;
+  border-bottom: @text_mainMenu-hover 3px solid;
+}
+
+
+.specialOffer {
+
+
+  color: @text_mainMenu-SpecialOffer;
+}
+
+.specialOffer:hover {
+  color: @text_mainMenu-hover;
+}
+
+.specialOffer:focus {
+  color: @text_mainMenu-hover;
+}
+
+.specialOffer:active {
+  color: @text_mainMenu-hover;
+}
+
+.specialOffer-2 {
+
+  color: @text_mainMenu-SpecialOffer;
+}
+
+.specialOffer-2:hover {
+  color: @text_mainMenu-hover;
+}
+
+.specialOffer-2:focus {
+  color: @text_mainMenu-hover;
+}
+
+.specialOffer-2:active {
+  color: @text_mainMenu-hover;
+}
+
+.imgSpecialOffer {
+  padding-top: 20px;
+  width: 22px;
+  height: 21px;
+  background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") 1px -112px;
+}
+
+
